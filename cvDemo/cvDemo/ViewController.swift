@@ -9,8 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController,UICollectionViewDelegateFlowLayout,UICollectionViewDataSource {
+    
     let myFont = UIFont.systemFont(ofSize: 17.0)
     @IBOutlet weak var cv: UICollectionView!
+    
     var dic = ["Aenean dapibus urna a ullamcorper malesuada. Ut tempor.End Here",
                "Sed venenatis ligula massa, a vulputate ipsum fringilla eget. Ut justo erat, facilisis id rhoncus cursus, fringilla at.End Here"]
     var dic1 = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis nibh metus, elementum tempus libero ornare vitae. Etiam sed leo pretium, consectetur turpis non, dapibus purus. Suspendisse potenti. Ut ut eros nunc. Cras nulla justo, porttitor non sapien at, iaculis.End Here",
@@ -32,6 +34,8 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout,UIColl
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //MARK: Collection View Methods.
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
         return 10
